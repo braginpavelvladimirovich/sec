@@ -1,0 +1,14 @@
+Отчет от 2025 09 15:
+
+Смена владельца файла/папки:
+
+sudo chown username:groupname filename
+
+sudo chown root:root /home
+
+Смена прав доступа к файлу/папке:
+
+chmod 0000 /home
+chmod 7777 /home
+chmod ugo-rwx /home
+chmod ugo+rwx /home
