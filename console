@@ -1,0 +1,671 @@
+Microsoft Windows [Version 10.0.19041.1]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+C:\Users\BRAGIN>ssh BraginPV@172.16.7.85
+BraginPV@172.16.7.85's password:
+Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.14.0-32-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+Расширенное поддержание безопасности (ESM) для Applications выключено.
+
+110 обновлений может быть применено немедленно.
+Чтобы просмотреть дополнительные обновления выполните: apt list --upgradable
+
+22 дополнительных обновления безопасности могут быть применены с помощью ESM Apps.
+Подробнее о включении службы ESM Apps at https://ubuntu.com/esm
+
+Last login: Mon Sep 22 17:22:25 2025 from 172.16.5.214
+BraginPV@alexandr-Aspire-Z5751:~$ ls -la
+итого 88
+drwxr-x---  10 BraginPV BraginPV  4096 сен 22 20:45 .
+drwxr-xr-x 245 root     root     12288 сен 16 20:49 ..
+-rw-------   1 BraginPV BraginPV  9707 сен 22 20:45 .bash_history
+drwx------   2 BraginPV BraginPV  4096 окт 18  2024 .cache
+drwxrwxr-x   3 BraginPV BraginPV  4096 апр  1 13:36 kks
+-rw-------   1 BraginPV BraginPV    20 дек 26  2024 .lesshst
+drwx------   3 BraginPV BraginPV  4096 окт 18  2024 .local
+drwxrwxr-x   4 BraginPV BraginPV  4096 дек 16  2024 prog
+drwxrwxr-x   3 BraginPV BraginPV  4096 сен 22 18:31 sec
+drwx------   4 BraginPV BraginPV  4096 окт 18  2024 snap
+drwx------   2 BraginPV BraginPV  4096 окт 11  2024 .ssh
+-rw-------   1 BraginPV BraginPV 23735 сен 22 18:31 .viminfo
+drwxrwxr-x   3 BraginPV BraginPV  4096 мая 20 11:44 wlt
+BraginPV@alexandr-Aspire-Z5751:~$ mkdir dirdir
+BraginPV@alexandr-Aspire-Z5751:~$ cd dirdir
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ sudo -1
+sudo: неверный ключ  1
+usage: sudo -h | -K | -k | -V
+usage: sudo -v [-ABkNnS] [-g group] [-h host] [-p prompt] [-u user]
+usage: sudo -l [-ABkNnS] [-g group] [-h host] [-p prompt] [-U user]
+            [-u user] [command [arg ...]]
+usage: sudo [-ABbEHkNnPS] [-r role] [-t type] [-C num] [-D directory]
+            [-g group] [-h host] [-p prompt] [-R directory] [-T timeout]
+            [-u user] [VAR=value] [-i | -s] [command [arg ...]]
+usage: sudo -e [-ABkNnS] [-r role] [-t type] [-C num] [-D directory]
+            [-g group] [-h host] [-p prompt] [-R directory] [-T timeout]
+            [-u user] file ...
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ sudo -i
+[sudo] пароль для BraginPV:
+BraginPV отсутствует в файле sudoers.
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ chmod
+chmod: пропущен операнд
+По команде chmod --help можно получить дополнительную информацию.
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ chmod 777 dirdir
+chmod: невозможно получить доступ к 'dirdir': Нет такого файла или каталога
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ cd ..
+BraginPV@alexandr-Aspire-Z5751:~$ chmod 777 dirdir
+BraginPV@alexandr-Aspire-Z5751:~$ chmod 7777 dirdir
+BraginPV@alexandr-Aspire-Z5751:~$ ls -la
+итого 92
+drwxr-x---  11 BraginPV BraginPV  4096 сен 29 17:46 .
+drwxr-xr-x 245 root     root     12288 сен 16 20:49 ..
+-rw-------   1 BraginPV BraginPV  9707 сен 22 20:45 .bash_history
+drwx------   2 BraginPV BraginPV  4096 окт 18  2024 .cache
+drwsrwsrwt   2 BraginPV BraginPV  4096 сен 29 17:46 dirdir
+drwxrwxr-x   3 BraginPV BraginPV  4096 апр  1 13:36 kks
+-rw-------   1 BraginPV BraginPV    20 дек 26  2024 .lesshst
+drwx------   3 BraginPV BraginPV  4096 окт 18  2024 .local
+drwxrwxr-x   4 BraginPV BraginPV  4096 дек 16  2024 prog
+drwxrwxr-x   3 BraginPV BraginPV  4096 сен 22 18:31 sec
+drwx------   4 BraginPV BraginPV  4096 окт 18  2024 snap
+drwx------   2 BraginPV BraginPV  4096 окт 11  2024 .ssh
+-rw-------   1 BraginPV BraginPV 23735 сен 22 18:31 .viminfo
+drwxrwxr-x   3 BraginPV BraginPV  4096 мая 20 11:44 wlt
+BraginPV@alexandr-Aspire-Z5751:~$ ls -l
+итого 24
+drwsrwsrwt 2 BraginPV BraginPV 4096 сен 29 17:46 dirdir
+drwxrwxr-x 3 BraginPV BraginPV 4096 апр  1 13:36 kks
+drwxrwxr-x 4 BraginPV BraginPV 4096 дек 16  2024 prog
+drwxrwxr-x 3 BraginPV BraginPV 4096 сен 22 18:31 sec
+drwx------ 4 BraginPV BraginPV 4096 окт 18  2024 snap
+drwxrwxr-x 3 BraginPV BraginPV 4096 мая 20 11:44 wlt
+BraginPV@alexandr-Aspire-Z5751:~$ chmod 7777 *
+BraginPV@alexandr-Aspire-Z5751:~$ ls -la
+итого 92
+drwxr-x---  11 BraginPV BraginPV  4096 сен 29 17:46 .
+drwxr-xr-x 245 root     root     12288 сен 16 20:49 ..
+-rw-------   1 BraginPV BraginPV  9707 сен 22 20:45 .bash_history
+drwx------   2 BraginPV BraginPV  4096 окт 18  2024 .cache
+drwsrwsrwt   2 BraginPV BraginPV  4096 сен 29 17:46 dirdir
+drwsrwsrwt   3 BraginPV BraginPV  4096 апр  1 13:36 kks
+-rw-------   1 BraginPV BraginPV    20 дек 26  2024 .lesshst
+drwx------   3 BraginPV BraginPV  4096 окт 18  2024 .local
+drwsrwsrwt   4 BraginPV BraginPV  4096 дек 16  2024 prog
+drwsrwsrwt   3 BraginPV BraginPV  4096 сен 22 18:31 sec
+drwsrwsrwt   4 BraginPV BraginPV  4096 окт 18  2024 snap
+drwx------   2 BraginPV BraginPV  4096 окт 11  2024 .ssh
+-rw-------   1 BraginPV BraginPV 23735 сен 22 18:31 .viminfo
+drwsrwsrwt   3 BraginPV BraginPV  4096 мая 20 11:44 wlt
+BraginPV@alexandr-Aspire-Z5751:~$ chmod 7777 .*
+BraginPV@alexandr-Aspire-Z5751:~$ ls -la
+итого 92
+drwxr-x---  11 BraginPV BraginPV  4096 сен 29 17:46 .
+drwxr-xr-x 245 root     root     12288 сен 16 20:49 ..
+-rwsrwsrwt   1 BraginPV BraginPV  9707 сен 22 20:45 .bash_history
+drwsrwsrwt   2 BraginPV BraginPV  4096 окт 18  2024 .cache
+drwsrwsrwt   2 BraginPV BraginPV  4096 сен 29 17:46 dirdir
+drwsrwsrwt   3 BraginPV BraginPV  4096 апр  1 13:36 kks
+-rwsrwsrwt   1 BraginPV BraginPV    20 дек 26  2024 .lesshst
+drwsrwsrwt   3 BraginPV BraginPV  4096 окт 18  2024 .local
+drwsrwsrwt   4 BraginPV BraginPV  4096 дек 16  2024 prog
+drwsrwsrwt   3 BraginPV BraginPV  4096 сен 22 18:31 sec
+drwsrwsrwt   4 BraginPV BraginPV  4096 окт 18  2024 snap
+drwsrwsrwt   2 BraginPV BraginPV  4096 окт 11  2024 .ssh
+-rwsrwsrwt   1 BraginPV BraginPV 23735 сен 22 18:31 .viminfo
+drwsrwsrwt   3 BraginPV BraginPV  4096 мая 20 11:44 wlt
+BraginPV@alexandr-Aspire-Z5751:~$ chmod 7777 .*
+BraginPV@alexandr-Aspire-Z5751:~$ ls -la
+итого 92
+drwxr-x---  11 BraginPV BraginPV  4096 сен 29 17:46 .
+drwxr-xr-x 245 root     root     12288 сен 16 20:49 ..
+-rwsrwsrwt   1 BraginPV BraginPV  9707 сен 22 20:45 .bash_history
+drwsrwsrwt   2 BraginPV BraginPV  4096 окт 18  2024 .cache
+drwsrwsrwt   2 BraginPV BraginPV  4096 сен 29 17:46 dirdir
+drwsrwsrwt   3 BraginPV BraginPV  4096 апр  1 13:36 kks
+-rwsrwsrwt   1 BraginPV BraginPV    20 дек 26  2024 .lesshst
+drwsrwsrwt   3 BraginPV BraginPV  4096 окт 18  2024 .local
+drwsrwsrwt   4 BraginPV BraginPV  4096 дек 16  2024 prog
+drwsrwsrwt   3 BraginPV BraginPV  4096 сен 22 18:31 sec
+drwsrwsrwt   4 BraginPV BraginPV  4096 окт 18  2024 snap
+drwsrwsrwt   2 BraginPV BraginPV  4096 окт 11  2024 .ssh
+-rwsrwsrwt   1 BraginPV BraginPV 23735 сен 22 18:31 .viminfo
+drwsrwsrwt   3 BraginPV BraginPV  4096 мая 20 11:44 wlt
+BraginPV@alexandr-Aspire-Z5751:~$ cd dirdir
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ mkdir dir1
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ mkdir dir2
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ mkdir dir3
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ mkdir dir4
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ mkdir file1
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ mkdir file2
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ mkdir file3
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ mkdir file4
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ ls -la
+итого 40
+drwsrwsrwt 10 BraginPV BraginPV 4096 сен 29 17:51 .
+drwxr-x--- 11 BraginPV BraginPV 4096 сен 29 17:46 ..
+drwxrwsr-x  2 BraginPV BraginPV 4096 сен 29 17:51 dir1
+drwxrwsr-x  2 BraginPV BraginPV 4096 сен 29 17:51 dir2
+drwxrwsr-x  2 BraginPV BraginPV 4096 сен 29 17:51 dir3
+drwxrwsr-x  2 BraginPV BraginPV 4096 сен 29 17:51 dir4
+drwxrwsr-x  2 BraginPV BraginPV 4096 сен 29 17:51 file1
+drwxrwsr-x  2 BraginPV BraginPV 4096 сен 29 17:51 file2
+drwxrwsr-x  2 BraginPV BraginPV 4096 сен 29 17:51 file3
+drwxrwsr-x  2 BraginPV BraginPV 4096 сен 29 17:51 file4
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ chmod 7777 .*
+chmod: невозможно получить доступ к '.*': Нет такого файла или каталога
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ chmod 7777 *
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ ls -la
+итого 40
+drwsrwsrwt 10 BraginPV BraginPV 4096 сен 29 17:51 .
+drwxr-x--- 11 BraginPV BraginPV 4096 сен 29 17:46 ..
+drwsrwsrwt  2 BraginPV BraginPV 4096 сен 29 17:51 dir1
+drwsrwsrwt  2 BraginPV BraginPV 4096 сен 29 17:51 dir2
+drwsrwsrwt  2 BraginPV BraginPV 4096 сен 29 17:51 dir3
+drwsrwsrwt  2 BraginPV BraginPV 4096 сен 29 17:51 dir4
+drwsrwsrwt  2 BraginPV BraginPV 4096 сен 29 17:51 file1
+drwsrwsrwt  2 BraginPV BraginPV 4096 сен 29 17:51 file2
+drwsrwsrwt  2 BraginPV BraginPV 4096 сен 29 17:51 file3
+drwsrwsrwt  2 BraginPV BraginPV 4096 сен 29 17:51 file4
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ chmod 0000 dir1
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ chmod 0000 file1
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ ls -la
+итого 40
+drwsrwsrwt 10 BraginPV BraginPV 4096 сен 29 17:51 .
+drwxr-x--- 11 BraginPV BraginPV 4096 сен 29 17:46 ..
+d--S--S---  2 BraginPV BraginPV 4096 сен 29 17:51 dir1
+drwsrwsrwt  2 BraginPV BraginPV 4096 сен 29 17:51 dir2
+drwsrwsrwt  2 BraginPV BraginPV 4096 сен 29 17:51 dir3
+drwsrwsrwt  2 BraginPV BraginPV 4096 сен 29 17:51 dir4
+d--S--S---  2 BraginPV BraginPV 4096 сен 29 17:51 file1
+drwsrwsrwt  2 BraginPV BraginPV 4096 сен 29 17:51 file2
+drwsrwsrwt  2 BraginPV BraginPV 4096 сен 29 17:51 file3
+drwsrwsrwt  2 BraginPV BraginPV 4096 сен 29 17:51 file4
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ chmod 0770 file2
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ chmod 0770 dir2
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ chmod 0007 dir3
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ chmod 0007 file3
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ chmod 7000 file4
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ chmod 7000 dir4
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ ls -la
+итого 40
+drwsrwsrwt 10 BraginPV BraginPV 4096 сен 29 17:51 .
+drwxr-x--- 11 BraginPV BraginPV 4096 сен 29 17:46 ..
+d--S--S---  2 BraginPV BraginPV 4096 сен 29 17:51 dir1
+drwsrws---  2 BraginPV BraginPV 4096 сен 29 17:51 dir2
+d--S--Srwx  2 BraginPV BraginPV 4096 сен 29 17:51 dir3
+d--S--S--T  2 BraginPV BraginPV 4096 сен 29 17:51 dir4
+d--S--S---  2 BraginPV BraginPV 4096 сен 29 17:51 file1
+drwsrws---  2 BraginPV BraginPV 4096 сен 29 17:51 file2
+d--S--Srwx  2 BraginPV BraginPV 4096 сен 29 17:51 file3
+d--S--S--T  2 BraginPV BraginPV 4096 сен 29 17:51 file4
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ group
+Команда group не найдена. Возможно, вы имели в виду:
+  команда 'grop' из deb-пакета grop (2:0.10-1.2)
+  команда 'groups' из deb-пакета coreutils (9.4-3ubuntu6.1)
+Попробуйте: apt install <имя_deb-пакета>
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ id
+uid=1061(BraginPV) gid=1061(BraginPV) группы=1061(BraginPV)
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ id -g
+1061
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ id -gn
+BraginPV
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ id -gn root
+root
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ id -g root
+0
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ id root
+uid=0(root) gid=0(root) группы=0(root)
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ groups
+BraginPV
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ groups root
+root : root
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ groups | wc -w
+1
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ groups | wc -w root
+wc: root: Нет такого файла или каталога
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ groups root | wc -w
+3
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ cd ..
+BraginPV@alexandr-Aspire-Z5751:~$ touch 1061
+BraginPV@alexandr-Aspire-Z5751:~$ ls -la
+итого 92
+drwxr-x---  11 BraginPV BraginPV  4096 сен 29 17:59 .
+drwxr-xr-x 245 root     root     12288 сен 16 20:49 ..
+-rw-rw-r--   1 BraginPV BraginPV     0 сен 29 17:59 1061
+-rwsrwsrwt   1 BraginPV BraginPV  9707 сен 22 20:45 .bash_history
+drwsrwsrwt   2 BraginPV BraginPV  4096 окт 18  2024 .cache
+drwsrwsrwt  10 BraginPV BraginPV  4096 сен 29 17:51 dirdir
+drwsrwsrwt   3 BraginPV BraginPV  4096 апр  1 13:36 kks
+-rwsrwsrwt   1 BraginPV BraginPV    20 дек 26  2024 .lesshst
+drwsrwsrwt   3 BraginPV BraginPV  4096 окт 18  2024 .local
+drwsrwsrwt   4 BraginPV BraginPV  4096 дек 16  2024 prog
+drwsrwsrwt   3 BraginPV BraginPV  4096 сен 22 18:31 sec
+drwsrwsrwt   4 BraginPV BraginPV  4096 окт 18  2024 snap
+drwsrwsrwt   2 BraginPV BraginPV  4096 окт 11  2024 .ssh
+-rwsrwsrwt   1 BraginPV BraginPV 23735 сен 22 18:31 .viminfo
+drwsrwsrwt   3 BraginPV BraginPV  4096 мая 20 11:44 wlt
+BraginPV@alexandr-Aspire-Z5751:~$ chmod 7777 1061
+BraginPV@alexandr-Aspire-Z5751:~$ ls -la
+итого 92
+drwxr-x---  11 BraginPV BraginPV  4096 сен 29 17:59 .
+drwxr-xr-x 245 root     root     12288 сен 16 20:49 ..
+-rwsrwsrwt   1 BraginPV BraginPV     0 сен 29 17:59 1061
+-rwsrwsrwt   1 BraginPV BraginPV  9707 сен 22 20:45 .bash_history
+drwsrwsrwt   2 BraginPV BraginPV  4096 окт 18  2024 .cache
+drwsrwsrwt  10 BraginPV BraginPV  4096 сен 29 17:51 dirdir
+drwsrwsrwt   3 BraginPV BraginPV  4096 апр  1 13:36 kks
+-rwsrwsrwt   1 BraginPV BraginPV    20 дек 26  2024 .lesshst
+drwsrwsrwt   3 BraginPV BraginPV  4096 окт 18  2024 .local
+drwsrwsrwt   4 BraginPV BraginPV  4096 дек 16  2024 prog
+drwsrwsrwt   3 BraginPV BraginPV  4096 сен 22 18:31 sec
+drwsrwsrwt   4 BraginPV BraginPV  4096 окт 18  2024 snap
+drwsrwsrwt   2 BraginPV BraginPV  4096 окт 11  2024 .ssh
+-rwsrwsrwt   1 BraginPV BraginPV 23735 сен 22 18:31 .viminfo
+drwsrwsrwt   3 BraginPV BraginPV  4096 мая 20 11:44 wlt
+BraginPV@alexandr-Aspire-Z5751:~$ cd dirdir
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ ls -la
+итого 40
+drwsrwsrwt 10 BraginPV BraginPV 4096 сен 29 17:51 .
+drwxr-x--- 11 BraginPV BraginPV 4096 сен 29 17:59 ..
+d--S--S---  2 BraginPV BraginPV 4096 сен 29 17:51 dir1
+drwsrws---  2 BraginPV BraginPV 4096 сен 29 17:51 dir2
+d--S--Srwx  2 BraginPV BraginPV 4096 сен 29 17:51 dir3
+d--S--S--T  2 BraginPV BraginPV 4096 сен 29 17:51 dir4
+d--S--S---  2 BraginPV BraginPV 4096 сен 29 17:51 file1
+drwsrws---  2 BraginPV BraginPV 4096 сен 29 17:51 file2
+d--S--Srwx  2 BraginPV BraginPV 4096 сен 29 17:51 file3
+d--S--S--T  2 BraginPV BraginPV 4096 сен 29 17:51 file4
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ touch file 5
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ ls -la
+итого 40
+drwsrwsrwt 10 BraginPV BraginPV 4096 сен 29 18:01 .
+drwxr-x--- 11 BraginPV BraginPV 4096 сен 29 17:59 ..
+-rw-rw-r--  1 BraginPV BraginPV    0 сен 29 18:01 5
+d--S--S---  2 BraginPV BraginPV 4096 сен 29 17:51 dir1
+drwsrws---  2 BraginPV BraginPV 4096 сен 29 17:51 dir2
+d--S--Srwx  2 BraginPV BraginPV 4096 сен 29 17:51 dir3
+d--S--S--T  2 BraginPV BraginPV 4096 сен 29 17:51 dir4
+-rw-rw-r--  1 BraginPV BraginPV    0 сен 29 18:01 file
+d--S--S---  2 BraginPV BraginPV 4096 сен 29 17:51 file1
+drwsrws---  2 BraginPV BraginPV 4096 сен 29 17:51 file2
+d--S--Srwx  2 BraginPV BraginPV 4096 сен 29 17:51 file3
+d--S--S--T  2 BraginPV BraginPV 4096 сен 29 17:51 file4
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ rm -rf file
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ rm -rf 5
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ rm -rf file1
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ rm -rf file2
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ rm -rf file3
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ rm -rf file4
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ ls -la
+итого 24
+drwsrwsrwt  6 BraginPV BraginPV 4096 сен 29 18:01 .
+drwxr-x--- 11 BraginPV BraginPV 4096 сен 29 17:59 ..
+d--S--S---  2 BraginPV BraginPV 4096 сен 29 17:51 dir1
+drwsrws---  2 BraginPV BraginPV 4096 сен 29 17:51 dir2
+d--S--Srwx  2 BraginPV BraginPV 4096 сен 29 17:51 dir3
+d--S--S--T  2 BraginPV BraginPV 4096 сен 29 17:51 dir4
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ touch file1
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ touch file2
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ touch file3
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ touch file4
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ ls -la
+итого 24
+drwsrwsrwt  6 BraginPV BraginPV 4096 сен 29 18:01 .
+drwxr-x--- 11 BraginPV BraginPV 4096 сен 29 17:59 ..
+d--S--S---  2 BraginPV BraginPV 4096 сен 29 17:51 dir1
+drwsrws---  2 BraginPV BraginPV 4096 сен 29 17:51 dir2
+d--S--Srwx  2 BraginPV BraginPV 4096 сен 29 17:51 dir3
+d--S--S--T  2 BraginPV BraginPV 4096 сен 29 17:51 dir4
+-rw-rw-r--  1 BraginPV BraginPV    0 сен 29 18:01 file1
+-rw-rw-r--  1 BraginPV BraginPV    0 сен 29 18:01 file2
+-rw-rw-r--  1 BraginPV BraginPV    0 сен 29 18:01 file3
+-rw-rw-r--  1 BraginPV BraginPV    0 сен 29 18:01 file4
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ chmod 7000 file4
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ chmod 0007 file3
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ chmod 0770 file2
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ chmod 0000 file1
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ ls -la
+итого 24
+drwsrwsrwt  6 BraginPV BraginPV 4096 сен 29 18:01 .
+drwxr-x--- 11 BraginPV BraginPV 4096 сен 29 17:59 ..
+d--S--S---  2 BraginPV BraginPV 4096 сен 29 17:51 dir1
+drwsrws---  2 BraginPV BraginPV 4096 сен 29 17:51 dir2
+d--S--Srwx  2 BraginPV BraginPV 4096 сен 29 17:51 dir3
+d--S--S--T  2 BraginPV BraginPV 4096 сен 29 17:51 dir4
+----------  1 BraginPV BraginPV    0 сен 29 18:01 file1
+-rwxrwx---  1 BraginPV BraginPV    0 сен 29 18:01 file2
+-------rwx  1 BraginPV BraginPV    0 сен 29 18:01 file3
+---S--S--T  1 BraginPV BraginPV    0 сен 29 18:01 file4
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ chmod 0000 dir1
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ ls -la
+итого 24
+drwsrwsrwt  6 BraginPV BraginPV 4096 сен 29 18:01 .
+drwxr-x--- 11 BraginPV BraginPV 4096 сен 29 17:59 ..
+d--S--S---  2 BraginPV BraginPV 4096 сен 29 17:51 dir1
+drwsrws---  2 BraginPV BraginPV 4096 сен 29 17:51 dir2
+d--S--Srwx  2 BraginPV BraginPV 4096 сен 29 17:51 dir3
+d--S--S--T  2 BraginPV BraginPV 4096 сен 29 17:51 dir4
+----------  1 BraginPV BraginPV    0 сен 29 18:01 file1
+-rwxrwx---  1 BraginPV BraginPV    0 сен 29 18:01 file2
+-------rwx  1 BraginPV BraginPV    0 сен 29 18:01 file3
+---S--S--T  1 BraginPV BraginPV    0 сен 29 18:01 file4
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ cat < file1
+-bash: file1: Отказано в доступе
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ cat > file1
+-bash: file1: Отказано в доступе
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ cat > file2
+hello world
+^C
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ cat < file2
+hello world
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ cat > file3
+-bash: file3: Отказано в доступе
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ cat > file4
+-bash: file4: Отказано в доступе
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ cat > file1
+-bash: file1: Отказано в доступе
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ chmod 0007 file1
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ cat > file1
+-bash: file1: Отказано в доступе
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ chmod 0070 file1
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ cat > file1
+-bash: file1: Отказано в доступе
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ chmod 0700 file1
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ cat > file1
+chmod 700
+^C
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ cat < file1
+chmod 700
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ chmod 7000 file1
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ cat > file1
+-bash: file1: Отказано в доступе
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ chmod 7077 file1
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ cat > file1
+-bash: file1: Отказано в доступе
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ ls -la
+итого 32
+drwsrwsrwt  6 BraginPV BraginPV 4096 сен 29 18:01 .
+drwxr-x--- 11 BraginPV BraginPV 4096 сен 29 17:59 ..
+d--S--S---  2 BraginPV BraginPV 4096 сен 29 17:51 dir1
+drwsrws---  2 BraginPV BraginPV 4096 сен 29 17:51 dir2
+d--S--Srwx  2 BraginPV BraginPV 4096 сен 29 17:51 dir3
+d--S--S--T  2 BraginPV BraginPV 4096 сен 29 17:51 dir4
+---Srwsrwt  1 BraginPV BraginPV   10 сен 29 18:05 file1
+-rwxrwx---  1 BraginPV BraginPV   12 сен 29 18:03 file2
+-------rwx  1 BraginPV BraginPV    0 сен 29 18:01 file3
+---S--S--T  1 BraginPV BraginPV    0 сен 29 18:01 file4
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ cat < file1
+-bash: file1: Отказано в доступе
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ chmod 077 file1
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ ls -la
+итого 32
+drwsrwsrwt  6 BraginPV BraginPV 4096 сен 29 18:01 .
+drwxr-x--- 11 BraginPV BraginPV 4096 сен 29 17:59 ..
+d--S--S---  2 BraginPV BraginPV 4096 сен 29 17:51 dir1
+drwsrws---  2 BraginPV BraginPV 4096 сен 29 17:51 dir2
+d--S--Srwx  2 BraginPV BraginPV 4096 сен 29 17:51 dir3
+d--S--S--T  2 BraginPV BraginPV 4096 сен 29 17:51 dir4
+----rwxrwx  1 BraginPV BraginPV   10 сен 29 18:05 file1
+-rwxrwx---  1 BraginPV BraginPV   12 сен 29 18:03 file2
+-------rwx  1 BraginPV BraginPV    0 сен 29 18:01 file3
+---S--S--T  1 BraginPV BraginPV    0 сен 29 18:01 file4
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ cat < file1
+-bash: file1: Отказано в доступе
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ cat > file1
+-bash: file1: Отказано в доступе
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ chmod 100 file1
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ cat > file1
+-bash: file1: Отказано в доступе
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ cat < file1
+-bash: file1: Отказано в доступе
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ ls -la
+итого 32
+drwsrwsrwt  6 BraginPV BraginPV 4096 сен 29 18:01 .
+drwxr-x--- 11 BraginPV BraginPV 4096 сен 29 17:59 ..
+d--S--S---  2 BraginPV BraginPV 4096 сен 29 17:51 dir1
+drwsrws---  2 BraginPV BraginPV 4096 сен 29 17:51 dir2
+d--S--Srwx  2 BraginPV BraginPV 4096 сен 29 17:51 dir3
+d--S--S--T  2 BraginPV BraginPV 4096 сен 29 17:51 dir4
+---x------  1 BraginPV BraginPV   10 сен 29 18:05 file1
+-rwxrwx---  1 BraginPV BraginPV   12 сен 29 18:03 file2
+-------rwx  1 BraginPV BraginPV    0 сен 29 18:01 file3
+---S--S--T  1 BraginPV BraginPV    0 сен 29 18:01 file4
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ chmod 200 file1
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ ls -la
+итого 32
+drwsrwsrwt  6 BraginPV BraginPV 4096 сен 29 18:01 .
+drwxr-x--- 11 BraginPV BraginPV 4096 сен 29 17:59 ..
+d--S--S---  2 BraginPV BraginPV 4096 сен 29 17:51 dir1
+drwsrws---  2 BraginPV BraginPV 4096 сен 29 17:51 dir2
+d--S--Srwx  2 BraginPV BraginPV 4096 сен 29 17:51 dir3
+d--S--S--T  2 BraginPV BraginPV 4096 сен 29 17:51 dir4
+--w-------  1 BraginPV BraginPV   10 сен 29 18:05 file1
+-rwxrwx---  1 BraginPV BraginPV   12 сен 29 18:03 file2
+-------rwx  1 BraginPV BraginPV    0 сен 29 18:01 file3
+---S--S--T  1 BraginPV BraginPV    0 сен 29 18:01 file4
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ cat < file1
+-bash: file1: Отказано в доступе
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ cat > file1
+hello world
+^C
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ cat > file1
+chamod 200 can write to file
+^C
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ cat < file1
+-bash: file1: Отказано в доступе
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ chmod 400 file1
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ cat < file1
+chamod 200 can write to file
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ cat > file1
+-bash: file1: Отказано в доступе
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ umask
+0002
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ umask 7777
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ touch umask
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ ls -la
+итого 32
+drwsrwsrwt  6 BraginPV BraginPV 4096 сен 29 18:11 .
+drwxr-x--- 11 BraginPV BraginPV 4096 сен 29 17:59 ..
+d--S--S---  2 BraginPV BraginPV 4096 сен 29 17:51 dir1
+drwsrws---  2 BraginPV BraginPV 4096 сен 29 17:51 dir2
+d--S--Srwx  2 BraginPV BraginPV 4096 сен 29 17:51 dir3
+d--S--S--T  2 BraginPV BraginPV 4096 сен 29 17:51 dir4
+-r--------  1 BraginPV BraginPV   29 сен 29 18:09 file1
+-rwxrwx---  1 BraginPV BraginPV   12 сен 29 18:03 file2
+-------rwx  1 BraginPV BraginPV    0 сен 29 18:01 file3
+---S--S--T  1 BraginPV BraginPV    0 сен 29 18:01 file4
+----------  1 BraginPV BraginPV    0 сен 29 18:11 umask
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ ls -la
+итого 32
+drwsrwsrwt  6 BraginPV BraginPV 4096 сен 29 18:11 .
+drwxr-x--- 11 BraginPV BraginPV 4096 сен 29 17:59 ..
+d--S--S---  2 BraginPV BraginPV 4096 сен 29 17:51 dir1
+drwsrws---  2 BraginPV BraginPV 4096 сен 29 17:51 dir2
+d--S--Srwx  2 BraginPV BraginPV 4096 сен 29 17:51 dir3
+d--S--S--T  2 BraginPV BraginPV 4096 сен 29 17:51 dir4
+-r--------  1 BraginPV BraginPV   29 сен 29 18:09 file1
+-rwxrwx---  1 BraginPV BraginPV   12 сен 29 18:03 file2
+-------rwx  1 BraginPV BraginPV    0 сен 29 18:01 file3
+---S--S--T  1 BraginPV BraginPV    0 сен 29 18:01 file4
+----------  1 BraginPV BraginPV    0 сен 29 18:11 umask
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ umask 0000
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ umask
+0000
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ touch umask0000
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ ls -la
+итого 32
+drwsrwsrwt  6 BraginPV BraginPV 4096 сен 29 18:12 .
+drwxr-x--- 11 BraginPV BraginPV 4096 сен 29 17:59 ..
+d--S--S---  2 BraginPV BraginPV 4096 сен 29 17:51 dir1
+drwsrws---  2 BraginPV BraginPV 4096 сен 29 17:51 dir2
+d--S--Srwx  2 BraginPV BraginPV 4096 сен 29 17:51 dir3
+d--S--S--T  2 BraginPV BraginPV 4096 сен 29 17:51 dir4
+-r--------  1 BraginPV BraginPV   29 сен 29 18:09 file1
+-rwxrwx---  1 BraginPV BraginPV   12 сен 29 18:03 file2
+-------rwx  1 BraginPV BraginPV    0 сен 29 18:01 file3
+---S--S--T  1 BraginPV BraginPV    0 сен 29 18:01 file4
+----------  1 BraginPV BraginPV    0 сен 29 18:11 umask
+-rw-rw-rw-  1 BraginPV BraginPV    0 сен 29 18:12 umask0000
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ mkdir umask-0000
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ ls -la
+итого 36
+drwsrwsrwt  7 BraginPV BraginPV 4096 сен 29 18:13 .
+drwxr-x--- 11 BraginPV BraginPV 4096 сен 29 17:59 ..
+d--S--S---  2 BraginPV BraginPV 4096 сен 29 17:51 dir1
+drwsrws---  2 BraginPV BraginPV 4096 сен 29 17:51 dir2
+d--S--Srwx  2 BraginPV BraginPV 4096 сен 29 17:51 dir3
+d--S--S--T  2 BraginPV BraginPV 4096 сен 29 17:51 dir4
+-r--------  1 BraginPV BraginPV   29 сен 29 18:09 file1
+-rwxrwx---  1 BraginPV BraginPV   12 сен 29 18:03 file2
+-------rwx  1 BraginPV BraginPV    0 сен 29 18:01 file3
+---S--S--T  1 BraginPV BraginPV    0 сен 29 18:01 file4
+----------  1 BraginPV BraginPV    0 сен 29 18:11 umask
+drwxrwsrwx  2 BraginPV BraginPV 4096 сен 29 18:13 umask-0000
+-rw-rw-rw-  1 BraginPV BraginPV    0 сен 29 18:12 umask0000
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ cat > exe.bash
+#!/bin/bash/
+whoami
+^C
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ cat < exe.bash
+#!/bin/bash/
+whoami
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ chmod 7777 exe.bash
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ ls -la
+итого 40
+drwsrwsrwt  7 BraginPV BraginPV 4096 сен 29 18:15 .
+drwxr-x--- 11 BraginPV BraginPV 4096 сен 29 17:59 ..
+d--S--S---  2 BraginPV BraginPV 4096 сен 29 17:51 dir1
+drwsrws---  2 BraginPV BraginPV 4096 сен 29 17:51 dir2
+d--S--Srwx  2 BraginPV BraginPV 4096 сен 29 17:51 dir3
+d--S--S--T  2 BraginPV BraginPV 4096 сен 29 17:51 dir4
+-rwsrwsrwt  1 BraginPV BraginPV   20 сен 29 18:16 exe.bash
+-r--------  1 BraginPV BraginPV   29 сен 29 18:09 file1
+-rwxrwx---  1 BraginPV BraginPV   12 сен 29 18:03 file2
+-------rwx  1 BraginPV BraginPV    0 сен 29 18:01 file3
+---S--S--T  1 BraginPV BraginPV    0 сен 29 18:01 file4
+----------  1 BraginPV BraginPV    0 сен 29 18:11 umask
+drwxrwsrwx  2 BraginPV BraginPV 4096 сен 29 18:13 umask-0000
+-rw-rw-rw-  1 BraginPV BraginPV    0 сен 29 18:12 umask0000
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ ./exe.bash
+-bash: ./exe.bash: /bin/bash/: неверный интерпретатор: Это не каталог
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ cat < exe.bash
+#!/bin/bash/
+whoami
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ cat > exe.bash
+#!/bin/bash
+whoami
+^C
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ ./exe.bash
+BraginPV
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ chmod 0000 exe.bash
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ ./exe.bash
+-bash: ./exe.bash: Отказано в доступе
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ chmod 7077 exe.bash
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ ./exe.bash
+-bash: ./exe.bash: Отказано в доступе
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ chmod 7777 exe.bash
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ chmod 7677 exe.bash
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ ./exe.bash
+-bash: ./exe.bash: Отказано в доступе
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ chmod 100 exe.bash
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ ./exe.bash
+/bin/bash: ./exe.bash: Отказано в доступе
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ chmod 111 exe.bash
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ ./exe.bash
+/bin/bash: ./exe.bash: Отказано в доступе
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ chmod 1111 exe.bash
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ ./exe.bash
+/bin/bash: ./exe.bash: Отказано в доступе
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ ls -la
+итого 40
+drwsrwsrwt  7 BraginPV BraginPV 4096 сен 29 18:15 .
+drwxr-x--- 11 BraginPV BraginPV 4096 сен 29 17:59 ..
+d--S--S---  2 BraginPV BraginPV 4096 сен 29 17:51 dir1
+drwsrws---  2 BraginPV BraginPV 4096 сен 29 17:51 dir2
+d--S--Srwx  2 BraginPV BraginPV 4096 сен 29 17:51 dir3
+d--S--S--T  2 BraginPV BraginPV 4096 сен 29 17:51 dir4
+---x--x--t  1 BraginPV BraginPV   19 сен 29 18:18 exe.bash
+-r--------  1 BraginPV BraginPV   29 сен 29 18:09 file1
+-rwxrwx---  1 BraginPV BraginPV   12 сен 29 18:03 file2
+-------rwx  1 BraginPV BraginPV    0 сен 29 18:01 file3
+---S--S--T  1 BraginPV BraginPV    0 сен 29 18:01 file4
+----------  1 BraginPV BraginPV    0 сен 29 18:11 umask
+drwxrwsrwx  2 BraginPV BraginPV 4096 сен 29 18:13 umask-0000
+-rw-rw-rw-  1 BraginPV BraginPV    0 сен 29 18:12 umask0000
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ chmod 0111 exe.bash
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ ./exe.bash
+/bin/bash: ./exe.bash: Отказано в доступе
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ chmod 0555 exe.bash
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ ./exe.bash
+BraginPV
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ chmod 0500 exe.bash
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ ./exe.bash
+BraginPV
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ chmod 0400 exe.bash
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ ./exe.bash
+-bash: ./exe.bash: Отказано в доступе
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ chmod 0300 exe.bash
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ ./exe.bash
+/bin/bash: ./exe.bash: Отказано в доступе
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ chmod 0100 exe.bash
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ ./exe.bash
+/bin/bash: ./exe.bash: Отказано в доступе
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ chmod 0500 exe.bash
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ ./exe.bash
+BraginPV
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ chmod 7111 exe.bash
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ ./exe.bash
+/bin/bash: ./exe.bash: Отказано в доступе
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ chmod 0500 exe.bash
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ ls -la
+итого 40
+drwsrwsrwt  7 BraginPV BraginPV 4096 сен 29 18:15 .
+drwxr-x--- 11 BraginPV BraginPV 4096 сен 29 17:59 ..
+d--S--S---  2 BraginPV BraginPV 4096 сен 29 17:51 dir1
+drwsrws---  2 BraginPV BraginPV 4096 сен 29 17:51 dir2
+d--S--Srwx  2 BraginPV BraginPV 4096 сен 29 17:51 dir3
+d--S--S--T  2 BraginPV BraginPV 4096 сен 29 17:51 dir4
+-r-x------  1 BraginPV BraginPV   19 сен 29 18:18 exe.bash
+-r--------  1 BraginPV BraginPV   29 сен 29 18:09 file1
+-rwxrwx---  1 BraginPV BraginPV   12 сен 29 18:03 file2
+-------rwx  1 BraginPV BraginPV    0 сен 29 18:01 file3
+---S--S--T  1 BraginPV BraginPV    0 сен 29 18:01 file4
+----------  1 BraginPV BraginPV    0 сен 29 18:11 umask
+drwxrwsrwx  2 BraginPV BraginPV 4096 сен 29 18:13 umask-0000
+-rw-rw-rw-  1 BraginPV BraginPV    0 сен 29 18:12 umask0000
+BraginPV@alexandr-Aspire-Z5751:~/dirdir$ cd ..
+BraginPV@alexandr-Aspire-Z5751:~$ ls -la
+итого 92
+drwxr-x---  11 BraginPV BraginPV  4096 сен 29 17:59 .
+drwxr-xr-x 245 root     root     12288 сен 16 20:49 ..
+-rwsrwsrwt   1 BraginPV BraginPV     0 сен 29 17:59 1061
+-rwsrwsrwt   1 BraginPV BraginPV  9707 сен 22 20:45 .bash_history
+drwsrwsrwt   2 BraginPV BraginPV  4096 окт 18  2024 .cache
+drwsrwsrwt   7 BraginPV BraginPV  4096 сен 29 18:15 dirdir
+drwsrwsrwt   3 BraginPV BraginPV  4096 апр  1 13:36 kks
+-rwsrwsrwt   1 BraginPV BraginPV    20 дек 26  2024 .lesshst
+drwsrwsrwt   3 BraginPV BraginPV  4096 окт 18  2024 .local
+drwsrwsrwt   4 BraginPV BraginPV  4096 дек 16  2024 prog
+drwsrwsrwt   3 BraginPV BraginPV  4096 сен 22 18:31 sec
+drwsrwsrwt   4 BraginPV BraginPV  4096 окт 18  2024 snap
+drwsrwsrwt   2 BraginPV BraginPV  4096 окт 11  2024 .ssh
+-rwsrwsrwt   1 BraginPV BraginPV 23735 сен 22 18:31 .viminfo
+drwsrwsrwt   3 BraginPV BraginPV  4096 мая 20 11:44 wlt
+BraginPV@alexandr-Aspire-Z5751:~$ cd sec
+BraginPV@alexandr-Aspire-Z5751:~/sec$ ls -la
+итого 36
+drwsrwsrwt  3 BraginPV BraginPV 4096 сен 22 18:31 .
+drwxr-x--- 11 BraginPV BraginPV 4096 сен 29 17:59 ..
+-rw-rw-r--  1 BraginPV BraginPV 1001 сен  1 11:31 20250901.txt
+-rw-rw-r--  1 BraginPV BraginPV  216 сен  8 11:39 20250908.txt
+-rw-rw-r--  1 BraginPV BraginPV  287 сен 15 18:42 20250915.txt
+-rw-rw-r--  1 BraginPV BraginPV 1624 сен 22 18:31 20250922.txt
+drwxrwxr-x  8 BraginPV BraginPV 4096 сен 22 18:31 .git
+-rw-------  1 BraginPV BraginPV  464 сен  1 10:52 key
+-rw-r--r--  1 BraginPV BraginPV  141 сен  1 10:52 key.pub
+-rw-rw-r--  1 BraginPV BraginPV    0 сен  1 10:55 test
+BraginPV@alexandr-Aspire-Z5751:~/sec$ touch 20250929.txt
+BraginPV@alexandr-Aspire-Z5751:~/sec$ vim 20250929.txt
