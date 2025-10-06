@@ -1,0 +1,22 @@
+ACL  - списки контроля доступа для файловой системы linux
+Являются дополнительным средством для расширений возможностей настройки доступа к обьеткам
+Устанавливается отдельным пакетом
+Просмотр настроек ACL:
+getfacl filename
+ 1:  # file: somedir/
+ 2:  # owner: lisa
+ 3:  # group: staff
+ 4:  user::rwx
+ 5:  user:joe:rwx               #effective:r-x
+ 6:  group::rwx                 #effective:r-x
+ 7:  group:cool:r-x
+ 8:  mask:r-x
+ 9:  other:r-x
+10:  default:user::rwx
+11:  default:user:joe:rwx       #effective:r-x
+12:  default:group::r-x
+13:  default:mask:r-x
+14:  default:other:---
+Установка прав доступа для отдельного пользователя:
+sudo setfacl -m u::7 dir
+
