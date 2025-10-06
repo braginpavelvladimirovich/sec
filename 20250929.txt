@@ -10,4 +10,20 @@ sudo chmod g+s file
 sudo chmod o+t dir
 По умолчанию файлы созданные владельцем внтри папки могут удалять владельцы или группа владельцев
 Папки с установленным т битом запрещают удаление всем кроме владельца при этом могут  его редактировать
-
+Смена владельцев в группе:
+sudo chown suername:groupname filename/directoryname
+mkdir dir/dir/dir/dir создает папку в папке с группой владельца и наследует г-бит
+touch dir/file создает файл с группой владельца г-бит не наследуется файлом
+sudo chmod o+t
+Пример прав доступа к папке с т-битом:
+1775/рвхрвхр-т
+При одновременной установки г и т-битов на папку, наследование распространяется только на г-бит
+chmod a-s dir
+chmod 0000 dir
+difference
+chmod a-rwxst dir
+0664/-rw-rw-r-- IUS user/1000 GID group/1000
+newgrp gropup
+cat > file
+rm file
+permission denied
